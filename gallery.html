@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(26, 144, 146);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+   box-sizing: border-box;
+   }
+      .logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+      }
+
+      .menu {
+    display: flex;
+    flex-wrap:warp;
+    gap: 40px;
+     }
+     .menu-item {
+    color: #cccccc;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+      font-size:large;
+}
+
+.menu-item:hover,
+.menu-item.active {
+    color: #f5c16c;
+  
+}
+.gym{
+    width:100%;
+    height: 50vh;
+    display: flex;
+}
+.g1img
+{
+    width:50%;
+    height:60vh;
+    margin-top:40px;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* left bigger, right smaller */
+  grid-template-rows: 1fr 1fr;    /* right side split into two rows */
+  gap: 10px; /* spacing between images */
+  max-width: 500px;
+  height:400px;
+  margin: 0 auto;
+  
+}
+
+.left {
+  grid-row: 1 / span 2; /* left image spans both rows */
+}
+
+.top {
+  grid-column: 2; /* right column */
+  grid-row: 1;    /* first row */
+}
+
+.bottom {
+  grid-column: 2; /* right column */
+  grid-row: 2;    /* second row */
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover; /* keeps images nicely cropped */
+  border-radius: 8px; /* optional rounded corners */
+}
+.matter{
+    width:50%;
+    height:50vh;
+
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="navbar">
+        <div class="logo">MARRITO</div>
+        <div class="menu">
+            
+            
+            <div ><a href="mainpage.html" target="_self" class="menu-item">HOME</a></div>
+            <div ><a href="about_us.html" target="_self" class="menu-item">ABOUT US</a></div>
+            <div ><a href="branches.html" target="_self" class="menu-item">BRANCHES</a></div>
+            <div class="menu-item active">SERVICES</div>
+            <div ><a href="room.html" target="_self" class="menu-item">ROOM BOOKINGS</a></div>
+            <div ><a href="contact.html" target="_self" class="menu-item">CONTACT US</a></div>
+        </div>
+    </div>
+
+     <div style="margin-top:130px;">
+        < <center><h1 style="color:rgb(26, 144, 146);font-family:Times New Roman;">SERVICES</h1></center>
+        <center><hr style="color:rgb(26, 144, 146);width:50%"></center>
+     </div>
+
+    <div class="gym">
+
+        <div class="g1img">
+            <div class="gallery-grid">
+                <div class="left"><img src="branchimg3/g2.webp" alt="Left Image"></div>
+                <div class="top"><img src="branchimg3/g1.jpg" alt="Top Right Image"></div>
+                <div class="bottom"><img src="branchimg3/g3.webp" alt="Bottom Right Image"></div>
+            </div>
+        </div>
+            <div class="matter">
+                <h1 ><pre style="color:rgb(26, 144, 146);font-family:Times New Roman;margin-top:70px;">   GYM</pre></h1>
+                <pre style="font-size: 20px;font-family:sans-serif;color:#313031">                    Our hotel gym is designed to help you stay active and energized
+  throughout your stay. Equipped with modern fitness machines including 
+  treadmills, weights, and exercise bikes, it offers everything you need for
+  a complete workout. Guests can enjoy a clean, spacious environment with 
+  complimentary water, towels, and locker facilities, making it easy to maintain 
+  your fitness routine while traveling. Open daily with flexible hours, the gym
+  ensures you never have to compromise on health and wellness during your visit.</pre>
+        </div>
+    
+    </div>
+
+     <div class="gym" style="margin-top:100px;">
+        <div class="matter">
+                <h1 ><pre style="color:rgb(26, 144, 146);font-family:Times New Roman;margin-top:70px;">   
+     Shopping Arcade</pre></h1>
+                <pre style="font-size: 20px;font-family:sans-serif;color:#313031">                    Our hotel’s shopping arcade brings convenience and variety right
+                    to your doorstep. Guests can explore a selection of boutique stores
+                    offering fashion, accessories, souvenirs, and daily essentials without
+                    leaving the property. Whether you need a quick purchase, a
+                    memorable gift, or simply want to browse, the arcade provides a 
+                    comfortable and stylish shopping experience designed to meet your
+                    needs during your stay.</pre>
+        </div>
+        <div class="g1img">
+            <div class="gallery-grid">
+                <div class="left"><img src="branchimg3/mall1.jpg" alt="Left Image"></div>
+                <div class="top"><img src="branchimg3/mall2.webp" alt="Top Right Image"></div>
+                <div class="bottom"><img src="branchimg3/m3.jpg" alt="Bottom Right Image"></div>
+            </div>
+        </div>
+    
+    </div>
+
+    <div class="gym" style="margin-top:100px;">
+
+        <div class="g1img">
+            <div class="gallery-grid">
+                <div class="left"><img src="branchimg3/rm2.jpg" alt="Left Image"></div>
+                <div class="top"><img src="branchimg3/rm1.webp" alt="Top Right Image"></div>
+                <div class="bottom"><img src="branchimg3/rm3.jpg" alt="Bottom Right Image"></div>
+            </div>
+        </div>
+            <div class="matter">
+                <h1 ><pre style="color:rgb(26, 144, 146);font-family:Times New Roman;margin-top:70px;">   24/7 Room Services</pre></h1>
+                <pre style="font-size: 20px;font-family:sans-serif;color:#313031">                    Our hotel offers round‑the‑clock room service to ensure comfort and
+convenience at any hour. Guests can enjoy freshly prepared meals, snacks,
+and beverages delivered directly to their rooms, whether it’s an early
+breakfast, a late‑night craving, or a special request. With options to 
+suit different tastes and dietary needs, our attentive staff is always 
+ready to provide a seamless dining experience without leaving the comfort
+ of your room.</pre>
+        </div>
+    
+    </div>
+
+</body>
+</html>

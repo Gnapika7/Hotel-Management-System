@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(26, 144, 146);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+   box-sizing: border-box;
+   }
+      .logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+      }
+
+      .menu {
+    display: flex;
+    flex-wrap:warp;
+    gap: 40px;
+     }
+     .menu-item {
+    color: #cccccc;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+      font-size:large;
+}
+
+.menu-item:hover,
+.menu-item.active {
+    color: #f5c16c;
+  
+}
+.inform{
+    width:100%;
+    height:50vh;
+    margin-top:130px;
+    display:flex;
+}
+.contact{
+    width:50%;
+    height:50vh;
+}
+.pic{
+  width:50%;
+    height:50vh;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* left bigger, right smaller */
+  grid-template-rows: 1fr 1fr;    /* right side split into two rows */
+  gap: 10px; /* spacing between images */
+  max-width: 500px;
+  height:400px;
+  margin: 0 auto;
+  
+}
+
+.left {
+  grid-row: 1 / span 2; /* left image spans both rows */
+}
+
+.top {
+  grid-column: 2; /* right column */
+  grid-row: 1;    /* first row */
+}
+
+.bottom {
+  grid-column: 2; /* right column */
+  grid-row: 2;    /* second row */
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover; /* keeps images nicely cropped */
+  border-radius: 8px; /* optional rounded corners */
+}
+</style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">MARRITO</div>
+        <div class="menu">
+            
+            
+            <div ><a href="mainpage.html" target="_self" class="menu-item">HOME</a></div>
+            <div ><a href="about_us.html" target="_self" class="menu-item">ABOUT US</a></div>
+            <div ><a href="branches.html" target="_self" class="menu-item">BRANCHES</a></div>
+            <div ><a href="gallery.html" target="_self" class="menu-item">SERVICES</a></div>
+            <div ><a href="room.html" target="_self" class="menu-item">ROOM BOOKINGS</a></div>
+            <div class="menu-item active">CONTACT US</div>
+           
+        </div>
+    </div>
+
+    <center><h1 style="color:rgb(21, 122, 133);margin-top: 130px;">Contact Terrazzo - SDA - New Delhi</h1></center>
+    <div class="inform">
+        
+        <div class="contact">
+            <br><br><br>
+            <p style="color:rgb(114, 47, 176);font-size:20px;">Terrazzo-SDA, New Delhi</p>
+            <p style="font-size:20px;"><i>285/16 ,Grand Morod, Road, near Nagoa, Grand Morrod, Saligao, New Delhi 403511 </i></p>
+            <br><br>
+            <p style="font-size:20px;"><span style="color:rgb(114, 47, 176);font-size:large"><b> Email: </b></span>crs@terrazzohotels.com</p>
+            <p style="font-size:20px;"><span style="color:rgb(114, 47, 176);font-size:large"><b>Phone:</b></span> +91 14 1354 0500, 1800 4120 0135</p>
+        </div>
+    
+
+    <div class="pic">
+        <div class="gallery-grid">
+                <div class="left"><img src="branchimg2/b2img6.webp" alt="Left Image"></div>
+                <div class="top"><img src="about_us2.jpg" alt="Top Right Image"></div>
+                <div class="bottom"><img src="branchimg3/b3img9.jpg" alt="Bottom Right Image"></div>
+            </div>
+
+    </div>
+
+    </div>
+    
+</body>
+</html>

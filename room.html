@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(26, 144, 146);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+   box-sizing: border-box;
+   }
+      .logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+      }
+
+      .menu {
+    display: flex;
+    flex-wrap:warp;
+    gap: 40px;
+     }
+     .menu-item {
+    color: #cccccc;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+      font-size:large;
+}
+
+.menu-item:hover,
+.menu-item.active {
+    color: #f5c16c;
+  
+}
+
+  .functionhall{
+    margin-top:130px;
+    height:20vh;
+    border:2px solid rgb(125, 121, 121);
+    margin-left:25px;
+    margin-right:25px;
+    border-radius:20px;
+    display:flex;
+  }
+  .func1
+  {
+    margin-top:25px;
+    height:20vh;
+    border:2px solid rgb(125, 121, 121);
+    margin-left:25px;
+    margin-right:25px;
+    border-radius:20px;
+    display:flex;
+
+  }
+  .matter{
+    width:65%;
+    height:20vh;
+  }
+  button{
+    width:45%;
+    height:20vh;
+  }
+  .btn{
+    background-color: rgb(239, 26, 26);
+    border-radius:30px;
+    color:white;
+    font-weight: bold;
+    font-size:larger;
+    height:65px;
+    width:150px;
+    border-color: white;
+    cursor:pointer;
+  }
+  .para{
+    color:rgb(149, 146, 146);
+    margin-left:20px;
+    margin-top:0;
+    line-height: 1.2%;
+  }
+  .stars {
+  color: gold;       /* makes stars gold */
+  font-size: 28px;   /* adjust size */
+  margin-left: 8px;  
+}
+
+.half {
+  display: inline-block;
+  width: 12px;       /* half width */
+  overflow: hidden;
+  color: gold;
+  vertical-align:sub;
+}
+.room-box p {
+    margin-bottom: 15px; 
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">MARRITO</div>
+        <div class="menu">
+            <div ><a href="mainpage.html" target="_self" class="menu-item">HOME</a></div>
+            <div ><a href="about_us.html" target="_self" class="menu-item">ABOUT US</a></div>
+            <div ><a href="branches.html" target="_self" class="menu-item">BRANCHES</a></div>
+            <div ><a href="gallery.html" target="_self" class="menu-item">SERVICES</a></div>
+            <div class="menu-item active">ROOM BOOKINGS</div>
+            <div ><a href="contact.html" target="_self" class="menu-item">CONTACT US</a></div>
+        </div>
+    </div>
+
+    <div class="functionhall" >
+
+        <div class="matter">
+            <div class="room-box">
+                <p style="margin-left:20px;font-size:35px;margin-top:20px;"><b> Function Hall </b>
+            <span class="stars">★★★★<span class="half">★</span></span>
+                </p>
+            </div>
+            <p class="para" ><span style="color:rgb(108, 108, 108)">Capacity:</span>Up to 800 guests</p>
+            <p class="para"><span style="color:rgb(108, 108, 108)">Facilities: </span>Projector, Sound System, Stage, Wi-Fi</p>
+            <p class="para">Perfect for weddings, parties, and corporate events</p>
+            <p class="para"><span style="color:rgb(108, 108, 108)">Price:</span> ₹15,000 per day</p>
+
+        </div>
+
+        <div class="button"  >
+            <button class="btn" style="margin-left:195px;margin-top:40px;">Book Now</button>
+        </div>
+    </div>
+
+    <div class="func1" >
+
+        <div class="matter">
+            <div class="room-box">
+              <p style="margin-left:20px;font-size:35px;margin-top:20px;"><b> Conference Hall</b>
+                <span class="stars">★★★</span>
+              </p>
+            </div>
+            <p class="para"><span style="color:rgb(108, 108, 108)">Capacity:</span> Up to 50 participants</p>
+            <p class="para"><span style="color:rgb(108, 108, 108)">Facilities: </span>Projector, Whiteboard, Wi-Fi, Video Conferencing</p>
+            <p class="para">Ideal for meetings, training sessions, summits and seminars</p>
+            <p class="para"><span style="color:rgb(108, 108, 108)">Price:</span> ₹10,000 per day</p>
+        </div>
+
+        <div class="button"  >
+            <button class="btn" style="margin-left:195px;margin-top:40px;">Book Now</button>
+        </div>
+    </div>
+    
+
+    <div class="func1" >
+
+        <div class="matter">
+            <div class="room-box">
+              <p style="margin-left:20px;font-size:35px;margin-top:20px;"><b>Single Room</b>
+                <span class="stars">★★★★★</span>
+              </p>
+            </div>
+            <p class="para"><span style="color:rgb(108, 108, 108)">Capacity:</span>  1 guest</p>
+            <p class="para"><span style="color:rgb(108, 108, 108)">Facilities: </span>Single bed, TV, Wi-Fi, attached bathroom</p>
+            <p class="para"><span style="color:rgb(108, 108, 108)">Price:</span> ₹1,000 per hour</p>
+            <p class="para"><span style="color:rgb(108, 108, 108)">"</span>Guests may enjoy breakfast, lunch, and dinner packages for an additional fee.<span style="color:rgb(108, 108, 108)">"</span></p>
+        </div>
+
+        <div class="button"  >
+            <button class="btn" style="margin-left:195px;margin-top:40px;">Book Now</button>
+        </div>
+    </div>
+
+    <div class="func1" >
+
+        <div class="matter">
+            <div class="room-box">
+              <p style="margin-left:20px;font-size:35px;margin-top:20px;"><b>Double Room</b>
+                <span class="stars">★★★★★</span>
+              </p>
+            </div>
+            <p class="para"><span style="color:rgb(108, 108, 108)">Capacity:</span>  2 guest</p>
+            <p class="para"><span style="color:rgb(108, 108, 108)">Facilities: </span>Double bed, TV, Wi-Fi, attached bathroom</p>
+            <p class="para"><span style="color:rgb(108, 108, 108)">Price:</span> ₹2,500 per hour</p>
+            <p class="para"><span style="color:rgb(108, 108, 108)">"</span>Guests may enjoy breakfast, lunch, and dinner packages for an additional fee.<span style="color:rgb(108, 108, 108)">"</span></p>
+        </div>
+
+        <div class="button"  >
+            <button class="btn" style="margin-left:195px;margin-top:40px;">Book Now</button>
+        </div>
+    </div>
+    
+    <div class="func1" >
+
+        <div class="matter">
+            <div class="room-box">
+              <p style="margin-left:20px;font-size:35px;margin-top:20px;"><b>Suite</b>
+                <span class="stars">★★★★★</span>
+              </p>
+            </div>
+            <p class="para"><span style="color:rgb(108, 108, 108)">Capacity:</span> 2–4 guests or family</p>
+            <p class="para"><span style="color:rgb(108, 108, 108)">Facilities: </span>King bed, separate living area, balcony/view, premium furniture, TV, Wi‑Fi, attached bathroom</p>
+            <p class="para"><span style="color:rgb(108, 108, 108)">Price:</span> ₹5,000 per hour</p>
+            <p class="para"><span style="color:rgb(108, 108, 108)">"</span>Guests may enjoy breakfast, lunch, and dinner packages for an additional fee.<span style="color:rgb(108, 108, 108)">"</span></p>
+        </div>
+
+        <div class="button"  >
+            <button class="btn" style="margin-left:195px;margin-top:40px;">Book Now</button>
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>
